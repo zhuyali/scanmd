@@ -1,0 +1,16 @@
+#!/usr/bin/env node
+
+'use strict';
+
+var args = process.argv.slice(2);
+
+var pkg = require('../package');
+
+if (args[0] === '-v') {
+  console.log(pkg.version);
+  process.exit(0);
+}
+
+var main = require('..');
+
+main();
