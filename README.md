@@ -7,7 +7,7 @@ $ npm install scanmd -g
 ```
 ## Quick Start
 ```
-$ scanmd zyl
+$ scanmd README.md
 ```
 ## License
 The MIT License (MIT)
