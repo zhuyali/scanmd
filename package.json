@@ -1,6 +1,6 @@
 {
   "name": "scanmd",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "scanmd",
   "bin": "./bin/scanmd",
   "main": "index.js",
@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/zhuyali/scanmd.git"
+    "url": "https://github.com/zhuyali/scanmd.git"
   },
   "keywords": [
     "scanmd"
