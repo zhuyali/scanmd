@@ -1,6 +1,6 @@
 {
   "name": "scanmd",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "look through markdown file on the browser",
   "bin": {
     "scanmd": "./bin/scanmd"
@@ -25,7 +25,8 @@
   "homepage": "https://github.com/zhuyali/scanmd#readme",
   "dependencies": {
     "hyperdown": "^2.1.0",
-    "koa": "^1.2.4"
+    "koa": "^1.2.4",
+    "ws": "^1.1.1"
   },
   "directories": {
     "doc": "doc"
