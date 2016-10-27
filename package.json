@@ -1,18 +1,21 @@
 {
   "name": "scanmd",
-  "version": "1.0.0",
-  "description": "scanmd",
-  "bin": "./bin/scanmd",
+  "version": "1.0.1",
+  "description": "look through markdown file on the browser",
+  "bin": {
+    "scanmd": "./bin/scanmd"
+  },
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/zhuyali/scanmd.git"
+    "url": "https://github.com/zhuyali/scanmd.git"
   },
   "keywords": [
-    "scanmd"
+    "browser",
+    "markdown"
   ],
   "author": "zhuyali",
   "license": "MIT",
@@ -23,5 +26,9 @@
   "dependencies": {
     "hyperdown": "^2.1.0",
     "koa": "^1.2.4"
-  }
+  },
+  "directories": {
+    "doc": "doc"
+  },
+  "devDependencies": {}
 }
