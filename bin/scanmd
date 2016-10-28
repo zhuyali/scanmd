@@ -5,6 +5,7 @@
 var args = process.argv.slice(2);
 
 var pkg = require('../package');
+var getUpdateInfo = require('../lib/getUpdateInfo');
 
 if (args[0] === '-v') {
   console.log(pkg.version);
@@ -13,4 +14,16 @@ if (args[0] === '-v') {
 
 var main = require('../lib/scanmd');
 
-main();
+//先进行版本检测
+var localVersion = pkg.version;
+
+getUpdateInfo(function(remoteVersion) {
+  if (typeof(remoteVersion) !== 'undefined' && remoteVersion != null && localVersion !== remoteVersion) {
+    console.log('检测到有版本更新...请更新后再使用.');
+    console.log('npm i -g ' + pkg.name + '@' + remoteVersion);
+    process.exit(0);
+  }
+  main();
+});
+
+
