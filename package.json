@@ -5,10 +5,14 @@
   "bin": {
     "scanmd": "./bin/scanmd"
   },
-  "main": "index.js",
+  "main": "./lib/scanmd",
   "scripts": {
+    "eslint": "make eslint",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "precommit": [
+    "eslint"
+  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/zhuyali/scanmd.git"
@@ -21,7 +25,7 @@
   "author": "zhuyali",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/zhuyali/scanmd/issues"
+    "url": "https:/r/github.com/zhuyali/scanmd/issues"
   },
   "homepage": "https://github.com/zhuyali/scanmd#readme",
   "dependencies": {
