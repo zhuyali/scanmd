@@ -1,6 +1,6 @@
 {
   "name": "scanmd",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "look through markdown file on the browser",
   "bin": {
     "scanmd": "./bin/scanmd"
@@ -26,6 +26,7 @@
   "dependencies": {
     "hyperdown": "^2.1.0",
     "koa": "^1.2.4",
+    "marked": "^0.3.6",
     "ws": "^1.1.1"
   },
   "directories": {
