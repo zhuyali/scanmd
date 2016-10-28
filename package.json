@@ -1,6 +1,6 @@
 {
   "name": "scanmd",
-  "version": "1.0.4",
+  "version": "1.0.6",
   "description": "look through markdown file on the browser",
   "bin": {
     "scanmd": "./bin/scanmd"
