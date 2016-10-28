@@ -11,6 +11,6 @@ if (args[0] === '-v') {
   process.exit(0);
 }
 
-var main = require('..');
+var main = require('../lib/scanmd');
 
 main();
